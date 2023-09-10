@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="logo">
+                <img src="2.png">
+            </div>
+            <a class="navbar-brand">MyCart</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Best seller.html">Best seller</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Women.html">Women</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Kids.html">Kids</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+                <div class="mx-2">
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                        data-bs-target="#LoginModal">Login</button>
+
+                    <a href="/Signup.html" class="btn btn-outline-light" tabindex="-1" role="button"
+                        aria-disabled="true">Link</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </nav>
+    <!-- LoginModal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="LoginModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-dark">Login</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- SignupModal -->
+    <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="SignupModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img name="main-banner" src="https://assets.ajio.com/cms/AJIO/WEB/29082023-UHP-D-Urgency-Lastday.jpg" alt="2"
+        style="position: relative; width: 100%;">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active my-4">
+                <img src="c1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="c2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="c3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="c4.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="c5.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" img src="j1.png" width="100%" height="400">
+                        <div class="card-body">
+                            <p class="card-text">JOHN PLAYERS JEANS
+                                Mid-Wash Slim Fit Jeans<br>₹1,592 (50% OFF)</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buynow</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Cart</button>
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" img src="j2.png" width="100%" height="400">
+                        <div class="card-body">
+                            <p class="card-text">DNMX
+                                Lightly Washed Skinny Fit Jeans<br>₹1,678 (43% OFF)</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buynow</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Cart</button>
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" img src="j3.jpeg" width="100%" height="400">
+                        <div class="card-body">
+                            <p class="card-text">WRANGLER
+                                Straight Fit Jeans with 5-Pocket<br>
+                                ₹2,919 (55% OFF)</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buynow</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Cart</button>
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" img src="j4.png" width="100%" height="400">
+                        <div class="card-body">
+                            <p class="card-text">WRANGLER
+                                Washed Jeans with 4-Pocket<br>₹2,332 (72% OFF)</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buynow</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Cart</button>
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" img src="j5.png" width="100%" height="400">
+                        <div class="card-body">
+                            <p class="card-text">SNITCH
+                                Relaxed-Fit Casual Jeans<br>₹1,689 (92% OFF)</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buynow</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Cart</button>
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" img src="j6.png" width="100%" height="400">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Levi's 511 Slim Fit Jeans<br>₹3,189 (80% OFF)</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buynow</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Cart</button>
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" img src="s3.png" width="100%" height="400">
+                        <div class="card-body">
+                            <p class="card-text">WOODLAND
+                                Men Low-Top Lace-Up Casual Shoes<br>
+                                ₹3,221 (48% OFF)</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buynow</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Cart</button>
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" img src="s1.png" width="100%" height="400">
+                        <div class="card-body">
+                            <p class="card-text">STYLI
+                                Canvas Lace-Up Casual Shoes<br>
+                                ₹799 (67% OFF)</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buynow</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Cart</button>
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" img src="s2.jpg" width="100%" height="400">
+                        <div class="card-body">
+                            <p class="card-text">ARBUNORE
+                                Textured Slip-On Shoes<br>
+                                ₹2,499 (66% OFF)</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buynow</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Cart</button>
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img name="class" src="h1.png" alt="2" style="position: relative; width: 100%;">
+    <div id="carouselExampleAutoplaying" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="c11.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="c10.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="c9.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="c8.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="c7.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <img name="main-banner" src="https://assets.ajio.com/cms/AJIO/WEB/18082023-UHP-D-footwearAccessories-header.jpg"
+        alt="1" style="position: relative; width: 100%;">
+    <div class="slick-list">
+        <div class="slick-track" style="opacity: 1; transform: translate3d(0px, 0px, 0px); width: 4080px;">
+            <div data-index="0" class="slick-slide slick-active" tabindex="-1"
+                style="outline: none; display: inline-block; width: 240px;">
+                <div role="presentation" class="banner-detail"
+                    style="width: 100%; overflow: hidden; vertical-align: bottom;">
+                    <div class="img-animate" style="width: 100%; display: flex;"><a src="/"
+                            data-ga-event-category="IMAGE" data-gtm-bnr-position="59" data-gtm-bnr-width="20"
+                            data-gtm-bnr-height="81.7"
+                            data-gtm-bnr-imgname="18082023-UHP-D-footwearAccessories-PumaSkechers-starting1199"
+                            data-gtm-bnr-id="6b198097-aeec-442c-b33c-d6880341fd59" data-gtm-bnr-isjioads="false"
+                            data-gtm-bnr-jioads-cid="" data-gtm-bnr-jioads-desc="" target="_self"
+                            style="cursor: auto; width: 100%;"><img name="main-banner"
+                                src="https://assets.ajio.com/cms/AJIO/WEB/18082023-UHP-D-footwearAccessories-PumaSkechers-starting1199.jpg"
+                                alt="1" style="position: relative; width: 100%;"></a><a target="_self"
+                            data-gtm-bnr-id="6b198097-aeec-442c-b33c-d6880341fd59" data-ga-event-category="IMAGE"
+                            data-gtm-bnr-position="59" data-gtm-bnr-width="20" data-gtm-bnr-height="81.7"
+                            data-gtm-bnr-imgname="18082023-UHP-D-footwearAccessories-PumaSkechers-starting1199"
+                            data-gtm-bnr-isjioads="false" data-gtm-bnr-jioads-cid="" data-gtm-bnr-jioads-impression=""
+                            data-gtm-bnr-jioads-clicktracker="" data-gtm-bnr-jioads-desc=""
+                            href="/s/starting-at-rs-1199-5152-49791" rel="noreferrer"
+                            style="position: absolute; left: 0%; top: 0%; width: 100%; height: 100%;"></a></div>
+                </div>
+            </div>
+            <div data-index="1" class="slick-slide slick-active" tabindex="-1"
+                style="outline: none; display: inline-block; width: 240px;">
+                <div role="presentation" class="banner-detail"
+                    style="width: 100%; overflow: hidden; vertical-align: bottom;">
+                    <div class="img-animate" style="width: 100%; display: flex;"><a src="/"
+                            data-ga-event-category="IMAGE" data-gtm-bnr-position="59/1" data-gtm-bnr-width="20"
+                            data-gtm-bnr-height="81.7"
+                            data-gtm-bnr-imgname="18082023-UHP-D-footwearAccessories-redtapecampus-starting299"
+                            data-gtm-bnr-id="164b2239-f491-4372-8150-796fe96e105e" data-gtm-bnr-isjioads="false"
+                            data-gtm-bnr-jioads-cid="" data-gtm-bnr-jioads-desc="" target="_self"
+                            style="cursor: auto; width: 100%;"><img name="main-banner"
+                                src="https://assets.ajio.com/cms/AJIO/WEB/18082023-UHP-D-footwearAccessories-redtapecampus-starting299.jpg"
+                                alt="2" style="position: relative; width: 100%;"></a><a target="_self"
+                            data-gtm-bnr-id="164b2239-f491-4372-8150-796fe96e105e" data-ga-event-category="IMAGE"
+                            data-gtm-bnr-position="59/1" data-gtm-bnr-width="20" data-gtm-bnr-height="81.7"
+                            data-gtm-bnr-imgname="18082023-UHP-D-footwearAccessories-redtapecampus-starting299"
+                            data-gtm-bnr-isjioads="false" data-gtm-bnr-jioads-cid="" data-gtm-bnr-jioads-impression=""
+                            data-gtm-bnr-jioads-clicktracker="" data-gtm-bnr-jioads-desc=""
+                            href="/s/starting-at-rs-299-5152-49791" rel="noreferrer"
+                            style="position: absolute; left: 0%; top: 0%; width: 100%; height: 100%;"></a></div>
+                </div>
+            </div>
+            <div data-index="2" class="slick-slide slick-active" tabindex="-1"
+                style="outline: none; display: inline-block; width: 240px;">
+                <div role="presentation" class="banner-detail"
+                    style="width: 100%; overflow: hidden; vertical-align: bottom;">
+                    <div class="img-animate" style="width: 100%; display: flex;"><a src="/"
+                            data-ga-event-category="IMAGE" data-gtm-bnr-position="59/2" data-gtm-bnr-width="20"
+                            data-gtm-bnr-height="81.7" data-gtm-bnr-imgname="clarksstevemadden-min50"
+                            data-gtm-bnr-id="cbb1287c-4ab6-4200-ae29-e5e32df4d5cc" data-gtm-bnr-isjioads="false"
+                            data-gtm-bnr-jioads-cid="" data-gtm-bnr-jioads-desc="" target="_self"
+                            style="cursor: auto; width: 100%;"><img name="main-banner"
+                                src="https://assets.ajio.com/cms/AJIO/WEB/clarksstevemadden-min50.jpg" alt="3"
+                                style="position: relative; width: 100%;"></a><a target="_self"
+                            data-gtm-bnr-id="cbb1287c-4ab6-4200-ae29-e5e32df4d5cc" data-ga-event-category="IMAGE"
+                            data-gtm-bnr-position="59/2" data-gtm-bnr-width="20" data-gtm-bnr-height="81.7"
+                            data-gtm-bnr-imgname="clarksstevemadden-min50" data-gtm-bnr-isjioads="false"
+                            data-gtm-bnr-jioads-cid="" data-gtm-bnr-jioads-impression=""
+                            data-gtm-bnr-jioads-clicktracker="" data-gtm-bnr-jioads-desc=""
+                            href="/s/min-50-percent-off-5152-49799" rel="noreferrer"
+                            style="position: absolute; left: 0%; top: 0%; width: 100%; height: 100%;"></a></div>
+                </div>
+            </div>
+            <div data-index="3" class="slick-slide slick-active" tabindex="-1"
+                style="outline: none; display: inline-block; width: 240px;">
+                <div role="presentation" class="banner-detail"
+                    style="width: 100%; overflow: hidden; vertical-align: bottom;">
+                    <div class="img-animate" style="width: 100%; display: flex;"><a src="/"
+                            data-ga-event-category="IMAGE" data-gtm-bnr-position="59/3" data-gtm-bnr-width="20"
+                            data-gtm-bnr-height="81.7"
+                            data-gtm-bnr-imgname="18082023-UHP-D-footwearAccessories-uspaadidas-upto50"
+                            data-gtm-bnr-id="67d29c8f-5ba8-404f-a820-eb24e67b65cd" data-gtm-bnr-isjioads="false"
+                            data-gtm-bnr-jioads-cid="" data-gtm-bnr-jioads-desc="" target="_self"
+                            style="cursor: auto; width: 100%;"><img name="main-banner"
+                                src="https://assets.ajio.com/cms/AJIO/WEB/18082023-UHP-D-footwearAccessories-uspaadidas-upto50.jpg"
+                                alt="4" style="position: relative; width: 100%;"></a><a target="_self"
+                            data-gtm-bnr-id="67d29c8f-5ba8-404f-a820-eb24e67b65cd" data-ga-event-category="IMAGE"
+                            data-gtm-bnr-position="59/3" data-gtm-bnr-width="20" data-gtm-bnr-height="81.7"
+                            data-gtm-bnr-imgname="18082023-UHP-D-footwearAccessories-uspaadidas-upto50"
+                            data-gtm-bnr-isjioads="false" data-gtm-bnr-jioads-cid="" data-gtm-bnr-jioads-impression=""
+                            data-gtm-bnr-jioads-clicktracker="" data-gtm-bnr-jioads-desc=""
+                            href="/s/up-to-50-percent-off-5152-49794" rel="noreferrer"
+                            style="position: absolute; left: 0%; top: 0%; width: 100%; height: 100%;"></a></div>
+                </div>
+            </div>
+            <div data-index="4" class="slick-slide slick-active" tabindex="-1"
+                style="outline: none; display: inline-block; width: 240px;">
+                <div role="presentation" class="banner-detail"
+                    style="width: 100%; overflow: hidden; vertical-align: bottom;">
+                    <div class="img-animate" style="width: 100%; display: flex;"><a src="/"
+                            data-ga-event-category="IMAGE" data-gtm-bnr-position="59/4" data-gtm-bnr-width="20"
+                            data-gtm-bnr-height="81.7"
+                            data-gtm-bnr-imgname="18082023-UHP-D-footwearAccessories-casionfossil-upto70extra10"
+                            data-gtm-bnr-id="5989c3c7-358d-4888-af06-6885bbd0b618" data-gtm-bnr-isjioads="false"
+                            data-gtm-bnr-jioads-cid="" data-gtm-bnr-jioads-desc="" target="_self"
+                            style="cursor: auto; width: 100%;"><img name="main-banner"
+                                src="https://assets.ajio.com/cms/AJIO/WEB/18082023-UHP-D-footwearAccessories-casionfossil-upto70extra10.jpg"
+                                alt="6" style="position: relative; width: 100%;"></a><a target="_self"
+                            data-gtm-bnr-id="5989c3c7-358d-4888-af06-6885bbd0b618" data-ga-event-category="IMAGE"
+                            data-gtm-bnr-position="59/4" data-gtm-bnr-width="20" data-gtm-bnr-height="81.7"
+                            data-gtm-bnr-imgname="18082023-UHP-D-footwearAccessories-casionfossil-upto70extra10"
+                            data-gtm-bnr-isjioads="false" data-gtm-bnr-jioads-cid="" data-gtm-bnr-jioads-impression=""
+                            data-gtm-bnr-jioads-clicktracker="" data-gtm-bnr-jioads-desc=""
+                            href="/s/up-to-70-percent-off-5152-49793" rel="noreferrer"
+                            style="position: absolute; left: 0%; top: 0%; width: 100%; height: 100%;"></a></div>
+                </div>
+            </div>
+            <div data-index="5" class="slick-slide" tabindex="-1"
+                style="outline: none; display: inline-block; width: 240px;">
+                <div role="presentation" class="banner-detail"
+                    style="width: 100%; overflow: hidden; vertical-align: bottom;">
+                    <div class="img-animate" style="width: 100%; display: flex;"><a src="/"
+                            data-ga-event-category="IMAGE" data-gtm-bnr-position="59/5" data-gtm-bnr-width="20"
+                            data-gtm-bnr-height="81.7"
+                            data-gtm-bnr-imgname="18082023-UHP-D-footwearAccessories-lenskartcarrera-upto70"
+                            data-gtm-bnr-id="db8dae6a-3f97-4d1e-9112-184937b3055e" data-gtm-bnr-isjioads="false"
+                            data-gtm-bnr-jioads-cid="" data-gtm-bnr-jioads-desc="" target="_self"
+                            style="cursor: auto; width: 100%;"><img name="main-banner"
+                                src="https://assets.ajio.com/cms/AJIO/WEB/18082023-UHP-D-footwearAccessories-lenskartcarrera-upto70.jpg"
+                                alt="7" style="position: relative; width: 100%;"></a><a target="_self"
+                            data-gtm-bnr-id="db8dae6a-3f97-4d1e-9112-184937b3055e" data-ga-event-category="IMAGE"
+                            data-gtm-bnr-position="59/5" data-gtm-bnr-width="20" data-gtm-bnr-height="81.7"
+                            data-gtm-bnr-imgname="18082023-UHP-D-footwearAccessories-lenskartcarrera-upto70"
+                            data-gtm-bnr-isjioads="false" data-gtm-bnr-jioads-cid="" data-gtm-bnr-jioads-impression=""
+                            data-gtm-bnr-jioads-clicktracker="" data-gtm-bnr-jioads-desc=""
+                            href="/s/up-to-70-percent-off-5152-49794" rel="noreferrer"
+                            style="position: absolute; left: 0%; top: 0%; width: 100%; height: 100%;"></a></div>
+                </div>
+            </div>
+            <div data-index="6" class="slick-slide" tabindex="-1"
+                style="outline: none; display: inline-block; width: 240px;">
+                <div role="presentation" class="banner-detail"
+                    style="width: 100%; overflow: hidden; vertical-align: bottom;">
+                    <div class="img-animate" style="width: 100%; display: flex;"><a src="/"
+                            data-ga-event-category="IMAGE" data-gtm-bnr-position="59/6" data-gtm-bnr-width="20"
+                            data-gtm-bnr-height="81.7"
+                            data-gtm-bnr-imgname="18082023-UHP-D-footwearAccessories-wildhornfgear-upto70"
+                            data-gtm-bnr-id="a777fc37-34cc-4346-a5d3-3625572005ed" data-gtm-bnr-isjioads="false"
+                            data-gtm-bnr-jioads-cid="" data-gtm-bnr-jioads-desc="" target="_self"
+                            style="cursor: auto; width: 100%;"><img name="main-banner"
+                                src="https://assets.ajio.com/cms/AJIO/WEB/18082023-UHP-D-footwearAccessories-wildhornfgear-upto70.jpg"
+                                alt="8" style="position: relative; width: 100%;"></a><a target="_self"
+                            data-gtm-bnr-id="a777fc37-34cc-4346-a5d3-3625572005ed" data-ga-event-category="IMAGE"
+                            data-gtm-bnr-position="59/6" data-gtm-bnr-width="20" data-gtm-bnr-height="81.7"
+                            data-gtm-bnr-imgname="18082023-UHP-D-footwearAccessories-wildhornfgear-upto70"
+                            data-gtm-bnr-isjioads="false" data-gtm-bnr-jioads-cid="" data-gtm-bnr-jioads-impression=""
+                            data-gtm-bnr-jioads-clicktracker="" data-gtm-bnr-jioads-desc=""
+                            href="/s/up-to-70-percent-off-5152-49795" rel="noreferrer"
+                            style="position: absolute; left: 0%; top: 0%; width: 100%; height: 100%;"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- START THE FEATURETTES -->
+    <hr class="featurette-divider">
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1 mx-4 my-2">WESTERN WEAR MUST-HAVE!<span
+                    class="text-body-secondary"></span></h2>
+            <p class="lead mx-4">Western wear is a clothing style derived from 19th century American old west region.
+                Jeans, t-shirts, and jackets are the prevalent clothing forms of this style among men and women. This
+                category of clothes is widely accepted by many cultures, as they offer comfort, durability, and variety.
+            </p>
+        </div>
+        <div class="col-md-5">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"> <img src="w1.png"
+                height="500">
+        </div>
+    </div>
+    <hr>
+
+    <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1 mx-2">DRESSING WELL IS A FORM OF GOOD MANNERS.</h2>
+            <p class="lead mx-2">Traditionally, men's formal attire indicates a black tie event, which means a black
+                tuxedo and a tuxedo shirt, and there's very little wiggle room around it. Paired with a starched white
+                shirt and cummerbund, the black tie look is the epitome of mens formal wear.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid"> <img src="w2.png"
+                height="500">
+        </div>
+        <!-- /END THE FEATURETTES -->
+    </div>
+    <hr>
+    <img name="main-banner my-4"
+        src="https://assets.ajio.com/cms/AJIO/WEB/18082023-UHP-D-footwearAccessories-header.jpg" alt="1"
+        style="position: relative; width: 100%;">
+    <div class="slick-track" style="opacity: 1; transform: translate3d(0px, 0px, 0px); width: 4320px;">
+        <div data-index="0" class="slick-slide slick-active" tabindex="-1"
+            style="outline: none; display: inline-block; width: 240px;">
+            <div role="presentation" class="banner-detail"
+                style="width: 100%; overflow: hidden; vertical-align: bottom;">
+                <div class="img-animate" style="width: 100%; display: flex;"><a src="/" data-ga-event-category="IMAGE"
+                        data-gtm-bnr-position="57" data-gtm-bnr-width="20" data-gtm-bnr-height="81.7"
+                        data-gtm-bnr-imgname="18082023-UHP-D-Ethnicwear-avaasaKimayra-starting599"
+                        data-gtm-bnr-id="b4b3ead9-85af-4212-8746-7ef601e17091" data-gtm-bnr-isjioads="false"
+                        data-gtm-bnr-jioads-cid="" data-gtm-bnr-jioads-desc="" target="_self"
+                        style="cursor: auto; width: 100%;"><img name="main-banner"
+                            src="https://assets.ajio.com/cms/AJIO/WEB/18082023-UHP-D-Ethnicwear-avaasaKimayra-starting599.jpg"
+                            alt="1" style="position: relative; width: 100%;"></a><a target="_self"
+                        data-gtm-bnr-id="b4b3ead9-85af-4212-8746-7ef601e17091" data-ga-event-category="IMAGE"
+                        data-gtm-bnr-position="57" data-gtm-bnr-width="20" data-gtm-bnr-height="81.7"
+                        data-gtm-bnr-imgname="18082023-UHP-D-Ethnicwear-avaasaKimayra-starting599"
+                        data-gtm-bnr-isjioads="false" data-gtm-bnr-jioads-cid="" data-gtm-bnr-jioads-impression=""
+                        data-gtm-bnr-jioads-clicktracker="" data-gtm-bnr-jioads-desc=""
+                        href="/s/starting-at-rs-599-5152-49792" rel="noreferrer"
+                        style="position: absolute; left: 0%; top: 0%; width: 100%; height: 100%;"></a></div>
+            </div>
+        </div>
+        <div data-index="1" class="slick-slide slick-active" tabindex="-1"
+            style="outline: none; display: inline-block; width: 240px;">
+            <div role="presentation" class="banner-detail"
+                style="width: 100%; overflow: hidden; vertical-align: bottom;">
+                <div class="img-animate" style="width: 100%; display: flex;"><a src="/" data-ga-event-category="IMAGE"
+                        data-gtm-bnr-position="57/1" data-gtm-bnr-width="20" data-gtm-bnr-height="81.7"
+                        data-gtm-bnr-imgname="18082023-UHP-D-Ethnicwear-PCJewellersZaveriPearls-upto80[1]"
+                        data-gtm-bnr-id="87886104-a97a-4272-ba57-cd0f39f0e549" data-gtm-bnr-isjioads="false"
+                        data-gtm-bnr-jioads-cid="" data-gtm-bnr-jioads-desc="" target="_self"
+                        style="cursor: auto; width: 100%;"><img name="main-banner"
+                            src="https://assets.ajio.com/cms/AJIO/WEB/18082023-UHP-D-Ethnicwear-PCJewellersZaveriPearls-upto80[1].jpg"
+                            alt="2" style="position: relative; width: 100%;"></a><a target="_self"
+                        data-gtm-bnr-id="87886104-a97a-4272-ba57-cd0f39f0e549" data-ga-event-category="IMAGE"
+                        data-gtm-bnr-position="57/1" data-gtm-bnr-width="20" data-gtm-bnr-height="81.7"
+                        data-gtm-bnr-imgname="18082023-UHP-D-Ethnicwear-PCJewellersZaveriPearls-upto80[1]"
+                        data-gtm-bnr-isjioads="false" data-gtm-bnr-jioads-cid="" data-gtm-bnr-jioads-impression=""
+                        data-gtm-bnr-jioads-clicktracker="" data-gtm-bnr-jioads-desc=""
+                        href="/s/min-80-percent-off-5160-49651" rel="noreferrer"
+                        style="position: absolute; left: 0%; top: 0%; width: 100%; height: 100%;"></a></div>
+            </div>
+        </div>
+        <div data-index="2" class="slick-slide slick-active" tabindex="-1"
+            style="outline: none; display: inline-block; width: 240px;">
+            <div role="presentation" class="banner-detail"
+                style="width: 100%; overflow: hidden; vertical-align: bottom;">
+                <div class="img-animate" style="width: 100%; display: flex;"><a src="/" data-ga-event-category="IMAGE"
+                        data-gtm-bnr-position="57/2" data-gtm-bnr-width="20" data-gtm-bnr-height="81.7"
+                        data-gtm-bnr-imgname="18082023-UHP-D-Ethnicwear-indiepickshritika-starting399"
+                        data-gtm-bnr-id="3f02a8cb-629a-4a52-85e9-2932bcea2bcb" data-gtm-bnr-isjioads="false"
+                        data-gtm-bnr-jioads-cid="" data-gtm-bnr-jioads-desc="" target="_self"
+                        style="cursor: auto; width: 100%;"><img name="main-banner"
+                            src="https://assets.ajio.com/cms/AJIO/WEB/18082023-UHP-D-Ethnicwear-indiepickshritika-starting399.jpg"
+                            alt="3" style="position: relative; width: 100%;"></a><a target="_self"
+                        data-gtm-bnr-id="3f02a8cb-629a-4a52-85e9-2932bcea2bcb" data-ga-event-category="IMAGE"
+                        data-gtm-bnr-position="57/2" data-gtm-bnr-width="20" data-gtm-bnr-height="81.7"
+                        data-gtm-bnr-imgname="18082023-UHP-D-Ethnicwear-indiepickshritika-starting399"
+                        data-gtm-bnr-isjioads="false" data-gtm-bnr-jioads-cid="" data-gtm-bnr-jioads-impression=""
+                        data-gtm-bnr-jioads-clicktracker="" data-gtm-bnr-jioads-desc=""
+                        href="/s/starting-at-rs-399-5152-49792" rel="noreferrer"
+                        style="position: absolute; left: 0%; top: 0%; width: 100%; height: 100%;"></a></div>
+            </div>
+        </div>
+        <div data-index="3" class="slick-slide slick-active" tabindex="-1"
+            style="outline: none; display: inline-block; width: 240px;">
+            <div role="presentation" class="banner-detail"
+                style="width: 100%; overflow: hidden; vertical-align: bottom;">
+                <div class="img-animate" style="width: 100%; display: flex;"><a src="/" data-ga-event-category="IMAGE"
+                        data-gtm-bnr-position="57/3" data-gtm-bnr-width="20" data-gtm-bnr-height="81.7"
+                        data-gtm-bnr-imgname="18082023-UHP-D-Ethnicwear-baggitlavie-starting499"
+                        data-gtm-bnr-id="16859d3b-fe60-4faa-bebc-03dcd63f0078" data-gtm-bnr-isjioads="false"
+                        data-gtm-bnr-jioads-cid="" data-gtm-bnr-jioads-desc="" target="_self"
+                        style="cursor: auto; width: 100%;"><img name="main-banner"
+                            src="https://assets.ajio.com/cms/AJIO/WEB/18082023-UHP-D-Ethnicwear-baggitlavie-starting499.jpg"
+                            alt="4" style="position: relative; width: 100%;"></a><a target="_self"
+                        data-gtm-bnr-id="16859d3b-fe60-4faa-bebc-03dcd63f0078" data-ga-event-category="IMAGE"
+                        data-gtm-bnr-position="57/3" data-gtm-bnr-width="20" data-gtm-bnr-height="81.7"
+                        data-gtm-bnr-imgname="18082023-UHP-D-Ethnicwear-baggitlavie-starting499"
+                        data-gtm-bnr-isjioads="false" data-gtm-bnr-jioads-cid="" data-gtm-bnr-jioads-impression=""
+                        data-gtm-bnr-jioads-clicktracker="" data-gtm-bnr-jioads-desc=""
+                        href="/s/starting-at-rs-499-5152-49793" rel="noreferrer"
+                        style="position: absolute; left: 0%; top: 0%; width: 100%; height: 100%;"></a></div>
+            </div>
+        </div>
+        <div data-index="4" class="slick-slide slick-active" tabindex="-1"
+            style="outline: none; display: inline-block; width: 240px;">
+            <div role="presentation" class="banner-detail"
+                style="width: 100%; overflow: hidden; vertical-align: bottom;">
+                <div class="img-animate" style="width: 100%; display: flex;"><a src="/" data-ga-event-category="IMAGE"
+                        data-gtm-bnr-position="57/4" data-gtm-bnr-width="20" data-gtm-bnr-height="81.7"
+                        data-gtm-bnr-imgname="21082023-UHP-D-Ethnicwear-KetchEthniccurry-upto85"
+                        data-gtm-bnr-id="e1c46956-91c9-4144-a185-f76533cf5512" data-gtm-bnr-isjioads="false"
+                        data-gtm-bnr-jioads-cid="" data-gtm-bnr-jioads-desc="" target="_self"
+                        style="cursor: auto; width: 100%;"><img name="main-banner"
+                            src="https://assets.ajio.com/cms/AJIO/WEB/21082023-UHP-D-Ethnicwear-KetchEthniccurry-upto85.jpg"
+                            alt="5" style="position: relative; width: 100%;"></a><a target="_self"
+                        data-gtm-bnr-id="e1c46956-91c9-4144-a185-f76533cf5512" data-ga-event-category="IMAGE"
+                        data-gtm-bnr-position="57/4" data-gtm-bnr-width="20" data-gtm-bnr-height="81.7"
+                        data-gtm-bnr-imgname="21082023-UHP-D-Ethnicwear-KetchEthniccurry-upto85"
+                        data-gtm-bnr-isjioads="false" data-gtm-bnr-jioads-cid="" data-gtm-bnr-jioads-impression=""
+                        data-gtm-bnr-jioads-clicktracker="" data-gtm-bnr-jioads-desc=""
+                        href="/s/up-to-85-percent-off-5160-50341" rel="noreferrer"
+                        style="position: absolute; left: 0%; top: 0%; width: 100%; height: 100%;"></a></div>
+            </div>
+        </div>
+        <div data-index="5" class="slick-slide" tabindex="-1"
+            style="outline: none; display: inline-block; width: 240px;">
+            <div role="presentation" class="banner-detail"
+                style="width: 100%; overflow: hidden; vertical-align: bottom;">
+                <div class="img-animate" style="width: 100%; display: flex;"><a src="/" data-ga-event-category="IMAGE"
+                        data-gtm-bnr-position="57/5" data-gtm-bnr-width="20" data-gtm-bnr-height="81.7"
+                        data-gtm-bnr-imgname="18082023-UHP-D-Ethnicwear-everqupidmochi-starting499"
+                        data-gtm-bnr-id="032ef2fe-7333-43fe-bc0c-5b7e6cf8378c" data-gtm-bnr-isjioads="false"
+                        data-gtm-bnr-jioads-cid="" data-gtm-bnr-jioads-desc="" target="_self"
+                        style="cursor: auto; width: 100%;"><img name="main-banner"
+                            src="https://assets.ajio.com/cms/AJIO/WEB/18082023-UHP-D-Ethnicwear-everqupidmochi-starting499.jpg"
+                            alt="5" style="position: relative; width: 100%;"></a><a target="_self"
+                        data-gtm-bnr-id="032ef2fe-7333-43fe-bc0c-5b7e6cf8378c" data-ga-event-category="IMAGE"
+                        data-gtm-bnr-position="57/5" data-gtm-bnr-width="20" data-gtm-bnr-height="81.7"
+                        data-gtm-bnr-imgname="18082023-UHP-D-Ethnicwear-everqupidmochi-starting499"
+                        data-gtm-bnr-isjioads="false" data-gtm-bnr-jioads-cid="" data-gtm-bnr-jioads-impression=""
+                        data-gtm-bnr-jioads-clicktracker="" data-gtm-bnr-jioads-desc=""
+                        href="/s/starting-at-rs-499-5152-49794" rel="noreferrer"
+                        style="position: absolute; left: 0%; top: 0%; width: 100%; height: 100%;"></a></div>
+            </div>
+        </div>
+        <div data-index="6" class="slick-slide" tabindex="-1"
+            style="outline: none; display: inline-block; width: 240px;">
+            <div role="presentation" class="banner-detail"
+                style="width: 100%; overflow: hidden; vertical-align: bottom;">
+                <div class="img-animate" style="width: 100%; display: flex;"><a src="/" data-ga-event-category="IMAGE"
+                        data-gtm-bnr-position="57/6" data-gtm-bnr-width="20" data-gtm-bnr-height="81.7"
+                        data-gtm-bnr-imgname="18082023-UHP-D-Ethnicwear-fabindiajompers-starting499"
+                        data-gtm-bnr-id="03c909c5-ad85-4bb7-913d-8a5f40bca3e7" data-gtm-bnr-isjioads="false"
+                        data-gtm-bnr-jioads-cid="" data-gtm-bnr-jioads-desc="" target="_self"
+                        style="cursor: auto; width: 100%;"><img name="main-banner"
+                            src="https://assets.ajio.com/cms/AJIO/WEB/18082023-UHP-D-Ethnicwear-fabindiajompers-starting499.jpg"
+                            alt="6" style="position: relative; width: 100%;"></a><a target="_self"
+                        data-gtm-bnr-id="03c909c5-ad85-4bb7-913d-8a5f40bca3e7" data-ga-event-category="IMAGE"
+                        data-gtm-bnr-position="57/6" data-gtm-bnr-width="20" data-gtm-bnr-height="81.7"
+                        data-gtm-bnr-imgname="18082023-UHP-D-Ethnicwear-fabindiajompers-starting499"
+                        data-gtm-bnr-isjioads="false" data-gtm-bnr-jioads-cid="" data-gtm-bnr-jioads-impression=""
+                        data-gtm-bnr-jioads-clicktracker="" data-gtm-bnr-jioads-desc=""
+                        href="/s/starting-at-rs-499-5152-49795" rel="noreferrer"
+                        style="position: absolute; left: 0%; top: 0%; width: 100%; height: 100%;"></a></div>
+            </div>
+        </div>
+        <div data-index="7" class="slick-slide" tabindex="-1"
+            style="outline: none; display: inline-block; width: 240px;">
+            <div role="presentation" class="banner-detail"
+                style="width: 100%; overflow: hidden; vertical-align: bottom;">
+                <div class="img-animate" style="width: 100%; display: flex;"><a src="/" data-ga-event-category="IMAGE"
+                        data-gtm-bnr-position="57/7" data-gtm-bnr-width="20" data-gtm-bnr-height="81.7"
+                        data-gtm-bnr-imgname="18082023-UHP-D-Ethnicwear-tommyhilfigerfastrack-starting599"
+                        data-gtm-bnr-id="b7c3013a-43e0-4a53-aad1-c024c0e51f23" data-gtm-bnr-isjioads="false"
+                        data-gtm-bnr-jioads-cid="" data-gtm-bnr-jioads-desc="" target="_self"
+                        style="cursor: auto; width: 100%;"><img name="main-banner"
+                            src="https://assets.ajio.com/cms/AJIO/WEB/18082023-UHP-D-Ethnicwear-tommyhilfigerfastrack-starting599.jpg"
+                            alt="7" style="position: relative; width: 100%;"></a><a target="_self"
+                        data-gtm-bnr-id="b7c3013a-43e0-4a53-aad1-c024c0e51f23" data-ga-event-category="IMAGE"
+                        data-gtm-bnr-position="57/7" data-gtm-bnr-width="20" data-gtm-bnr-height="81.7"
+                        data-gtm-bnr-imgname="18082023-UHP-D-Ethnicwear-tommyhilfigerfastrack-starting599"
+                        data-gtm-bnr-isjioads="false" data-gtm-bnr-jioads-cid="" data-gtm-bnr-jioads-impression=""
+                        data-gtm-bnr-jioads-clicktracker="" data-gtm-bnr-jioads-desc=""
+                        href="/s/starting-at-rs-599-5152-49793" rel="noreferrer"
+                        style="position: absolute; left: 0%; top: 0%; width: 100%; height: 100%;"></a></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+            <div class="col mb-3">
+                <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="col mb-3">
+                <h5>Shop By</h5>
+                <ul class="nav flex-column">
+                    <li>Mens</li>
+                    <li>Womens</li>
+                    <li>Kids</li>
+                    <li>Stores</li>
+                    <li>New Arrivals</li>
+            </div>
+            <div class="col mb-3">
+                <h5>Help</h5>
+                <ul class="nav flex-column">
+                    <li>Track Your Order</li>
+                    <li>Cancellation</li>
+                    <li>Payments</li>
+                    <li>Return</li>
+                    <li>Customer </li>
+                </ul>
+            </div>
+            <div class="col mb-3 mx-5">
+                <h5>Follow Us</h5>
+                <ul class="nav flex-column">
+                    <li>Facebook</li>
+                    <li>Instagram-MyCart</li>
+                    <li>Twitter</li>
+                    <li>Pinterest</li>
+                    <li>About</li>
+                </ul>
+            </div>
+        </footer>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="logo">
+                <img src="2.png">
+            </div>
+            <a class="navbar-brand">MyCart</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/Best seller.html">Best seller</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Mens.html">Mens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Women.html">Women</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Kids.html">Kids</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+                <div class="mx-2">
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                        data-bs-target="#LoginModal">Login</button>
+
+                    <a href="/Signup.html" class="btn btn-outline-light" tabindex="-1" role="button"
+                        aria-disabled="true">Link</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </nav>
+    <!-- LoginModal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="LoginModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-dark">Login</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- SignupModal -->
+    <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="SignupModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="/images/22.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="/images/23.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/images/24.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+
+
+    <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" img src="images/1.jpg" width="100%" height="400">
+                        <div class="card-body">
+                            <p class="card-text">LUMINOX
+                                XS.0301.BO.L Analogue Watch<br>
+                                ₹19,760</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buynow</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" img src="images/2.jpg" width="100%" height="400">
+                        <div class="card-body">
+                            <p class="card-text">TOMMY HILFIGER
+                                NDTH1791719<br>
+                                ₹16,995</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buynow</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" img src="images/3.jpg" width="100%" height="400">
+                        <div class="card-body">
+                            <p class="card-text">TIMEX
+                                TWEG18502 Analogue Watch with Stainless Steel Strap<br>
+                                ₹4,219</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buynow</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" img src="images/4.jpg" width="100%" height="400">
+                        <div class="card-body">
+                            <p class="card-text">DANIEL KLEIN
+                                DK11599-2 Analog Watch with Leather Strap<br>
+                                ₹4,740</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buynow</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" img src="images/5.jpg" width="100%" height="400">
+                        <div class="card-body">
+                            <p class="card-text">FASTRACK
+                                NP38042PP01 Black Dial Analog Watch<br>
+                                ₹2,134</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buynow</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" img src="images/6.jpg" width="100%" height="400">
+                        <div class="card-body">
+                            <p class="card-text">NIBOSI
+                                Men Water-Resistant Chronograph Watch-NB-2517-SGB<br>
+                                ₹2,649</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buynow</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" img src="images/7.jpg" width="100%" height="400">
+                        <div class="card-body">
+                            <p class="card-text">FABINDIA
+                                Embellished Straight Kurta<br>
+                                ₹1,899</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buynow</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" img src="images/8.jpg" width="100%" height="400">
+                        <div class="card-body">
+                            <p class="card-text">AVAASA MIX N' MATCH
+                                Printed A-Line Kurta<br>
+                                ₹500</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buynow</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" img src="images/9.jpg" width="100%" height="400">
+                        <div class="card-body">
+                            <p class="card-text">GORGONE
+                                Embellished Straight Kurta<br>
+                                ₹478</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buynow</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" img src="images/10.jpg" width="100%" height="400">
+                        <div class="card-body">
+                            <p class="card-text">VOYAGE
+                                2025P Full-Rim Wayfarers Sunglasses<br>
+                                ₹1,500</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buynow</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" img src="images/11.jpg" width="100%" height="400">
+                        <div class="card-body">
+                            <p class="card-text">CARLTON LONDON
+                                Women UV Protected Lens Oval Sunglasses<br>
+                                ₹725</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buynow</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" img src="images/12.jpg" width="100%" height="400">
+                        <div class="card-body">
+                            <p class="card-text">MARK & KEITH
+                                Set of 4 Textured Handbag with Pouches<br>
+                                ₹850</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buynow</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" img src="images/13.jpg" width="100%" height="400">
+                        <div class="card-body">
+                            <p class="card-text">TEREZA
+                                Foil-Print Saree with Lace Border<br>
+                                ₹479</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buynow</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" img src="images/14.jpg" width="100%" height="400">
+                        <div class="card-body">
+                            <p class="card-text">RI-WAH
+                                Embroidered Saree with Contrast Border<br>
+                                ₹2,519</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buynow</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" img src="images/15.jpg" width="100%" height="400">
+                        <div class="card-body">
+                            <p class="card-text">SOCH
+                                Floral Embroidered Georgette Saree<br>
+                                ₹2,879</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buynow</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" img src="images/16.jpg" width="100%" height="400">
+                        <div class="card-body">
+                            <p class="card-text">TEAMSPIRIT
+                                Core Drawstring Shorts with Side Pockets<br>
+                                ₹254</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buynow</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" img src="images/17.jpg" width="100%" height="400">
+                        <div class="card-body">
+                            <p class="card-text">NETPLAY
+                                City Shorts with Insert Pockets<br>
+                                ₹509</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buynow</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" img src="images/18.jpg" width="100%" height="400">
+                        <div class="card-body">
+                            <p class="card-text">TEAMSPIRIT
+                                Typographic Print Shorts with Slip Pockets<br>
+                                ₹254</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buynow</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" img src="images/19.jpg" width="100%" height="400">
+                        <div class="card-body">
+                            <p class="card-text">PSPEACHES
+                                Floral Print Fit & Flare Dress<br>
+                                ₹1,000</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buynow</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" img src="images/20.jpg" width="100%" height="400">
+                        <div class="card-body">
+                            <p class="card-text">NAUGHTY NINOS
+                                Floral Print Fit & Flare Dress with Slit<br>
+                                ₹883</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buynow</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" img src="images/21.jpg" width="100%" height="400">
+                        <div class="card-body">
+                            <p class="card-text">TIOR
+                                Checked Fit & Flare Dress<br>
+                                ₹640</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Buynow</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+            <div class="col mb-3">
+                <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="col mb-3">
+                <h5>Shop By</h5>
+                <ul class="nav flex-column">
+                    <li>Mens</li>
+                    <li>Womens</li>
+                    <li>Kids</li>
+                    <li>Stores</li>
+                    <li>New Arrivals</li>
+            </div>
+            <div class="col mb-3">
+                <h5>Help</h5>
+                <ul class="nav flex-column">
+                    <li>Track Your Order</li>
+                    <li>Cancellation</li>
+                    <li>Payments</li>
+                    <li>Return</li>
+                    <li>Customer </li>
+                </ul>
+            </div>
+            <div class="col mb-3 mx-5">
+                <h5>Follow Us</h5>
+                <ul class="nav flex-column">
+                    <li>Facebook</li>
+                    <li>Instagram-MyCart</li>
+                    <li>Twitter</li>
+                    <li>Pinterest</li>
+                    <li>About</li>
+                </ul>
+            </div>
+        </footer>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
